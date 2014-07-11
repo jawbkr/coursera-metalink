@@ -1,0 +1,27 @@
+{
+  "name": "coursera-metalink",
+  "description": "Generate a Metalink for downloading Coursera resources",
+  "version": "0.1.0",
+  "homepage": "https://github.com/jawbkr/coursera-metalink",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jawbkr/coursera-metalink.git"
+  },
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "gulp": "^3.8.6",
+    "gulp-mocha": "^0.5.0",
+    "gulp-template": "~0.1.1",
+    "gulp-concat": "^2.2.0",
+    "gulp-clean": "^0.3.1",
+    "gulp-shell": "^0.2.7",
+    "gulp-typescript-compiler": "^1.0.1",
+    "gulp-less": "^1.3.1",
+    "gulp-wrap": "~0.3.0",
+    "gulp-handlebars": "~2.1.0",
+    "gulp-define-module": "~0.1.1",
+    "gulp-declare": "~0.2.0",
+    "gulp-uglify": "^0.3.1",
+    "streamqueue": "^0.1.1"
+  }
+}

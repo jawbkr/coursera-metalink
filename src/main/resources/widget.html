@@ -1,0 +1,43 @@
+<div id="cmg-widget">
+    <h2 class="course-page-header">Coursera Metalink Generator</h2>
+
+    <div id="cmg-pick-lectures">
+        <h5>Lectures</h5>
+        <ul class="unstyled">
+            {{#each selectLectureShortcuts}}
+            <li><a class="cmg-pick-lecture" href="#">{{label}}</a></li>
+            {{/each}}
+        </ul>
+    </div>
+
+    <div id="cmg-pick-categories">
+        <h5>Resources</h5>
+        <ul class="unstyled">
+            {{#each categories}}
+            <li>
+                <label for="cmg-category-{{@index}}" class="checkbox">
+                    <input id="cmg-category-{{@index}}" type="checkbox">
+                    <span>&nbsp;</span>
+                    {{#if isMisc}}
+                    <em>{{name}}</em>
+                    {{else}}
+                    {{name}}
+                    {{/if}}
+                </label>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+
+    <div id="cmg-action">
+        <div id="cmg-progress" class="cmg-progress-hidden">
+            <div class="progress">
+                <div class="bar"></div>
+            </div>
+            <div id="cmg-status">&nbsp;</div>
+        </div>
+        <a download="resources.metalink"></a>
+        <button class="btn btn-primary">Metalink</button>
+    </div>
+
+</div>

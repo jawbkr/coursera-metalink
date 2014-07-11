@@ -1,0 +1,78 @@
+.cmg-pickable {
+  float: right;
+}
+
+.cmg-pickable-lecture {
+  .cmg-pickable;
+  margin-right: -20px !important;
+}
+
+.cmg-pickable-section {
+  .cmg-pickable;
+  margin-right: 20px !important;
+}
+
+#cmg-widget {
+  overflow: hidden;
+  position: relative;
+
+  ul {
+    margin-left: 20px;
+  }
+
+  #cmg-pick-lectures {
+    float: left;
+    margin-right: 50px;
+  }
+
+  #cmg-pick-categories {
+    float: left;
+    margin-right: 50px;
+
+    span {
+      display: inline-block;
+      width: 2em;
+      text-align: right;
+      margin-right: 0.5em;
+    }
+
+    input[type=checkbox]:disabled + label {
+      color: #ccc;
+    }
+  }
+
+  #cmg-action {
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+    width: 400px;
+
+    button {
+      float: right;
+    }
+
+    .cmg-progress-hidden {
+      visibility: hidden;
+    }
+
+    #cmg-progress {
+      #cmg-status {
+        text-align: right;
+        margin-top: -15px;
+        margin-bottom: 25px;
+        font-style: italic;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .bar {
+        -webkit-transition-duration: 0.01s;
+        -moz-transition-duration: 0.01s;
+        -ms-transition-duration: 0.01s;
+        -o-transition-duration: 0.01s;
+        transition-duration: 0.01s;
+      }
+    }
+  }
+}

@@ -1,0 +1,3 @@
+interface Pickable {
+    isPicked(): boolean
+}
