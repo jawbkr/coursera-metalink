@@ -1,6 +1,6 @@
 class SimpleFileRenamer implements FileRenamer {
 
-    private static CDN_FILENAME = /^.+\/([-\w]+\.[-\w]+)(?:\?|$)/ //some/path/to/(filename.ext)
+    private static CDN_FILENAME = /^.+\/(.+\.[-\w]+)(?:\?|$)/ //some/path/to/(filename.ext)
     private static COURSERA_FILENAME = /^Content-Disposition: attachment; filename="([^"]+)/m
     private static REPLACE_SORTING = /^\d\d? - \d\d? - /
 

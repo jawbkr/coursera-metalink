@@ -1,7 +1,7 @@
 {
   "name": "coursera-metalink",
   "description": "Generate a Metalink for downloading Coursera resources",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/jawbkr/coursera-metalink",
   "repository": {
     "type": "git",
